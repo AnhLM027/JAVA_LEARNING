@@ -22,9 +22,7 @@ public class HELLOJAR {
             int n = in.nextInt();
             for (int i = 0; i < n; i++) {
                 in.nextLine();
-                System.out.println("Nhập mã môn học : ");
                 code = in.nextLine();
-                System.out.println("Nhập tên : ");
                 name = in.nextLine();
                 int cnt = in.nextInt();
                 Subject B = new Subject(name, code, cnt);
@@ -39,8 +37,8 @@ public class HELLOJAR {
             invoice.setAlSubject(A);
             invoice.setSt(student);
             double amount = 0;
-            for(Subject x: A){
-                amount += x.getCredit()*rule.getCreditPrice();
+            for (Subject x : A) {
+                amount += x.getCredit() * rule.getCreditPrice();
             }
             invoice.setAmount(amount);
         }
@@ -56,4 +54,5 @@ public class HELLOJAR {
         Invoice invoice = pc.getInvoice();
         InvoiceView.show(invoice);
     }
+
 }

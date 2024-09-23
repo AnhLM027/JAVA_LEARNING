@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Code_PTIT;
 
 import java.util.*;
@@ -30,7 +26,7 @@ public class J01013 {
     public static long solve(int n) {
         long sum = 0;
         while (n > 1) {
-            sum += (long)dp[n];
+            sum += (long) dp[n];
             n /= dp[n];
         }
         return sum;
