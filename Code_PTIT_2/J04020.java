@@ -16,15 +16,15 @@ public class J04020 {
     
     
     static class Pair<U, V> {
-    public final U first;
-    public final V second;
+        public final U first;
+        public final V second;
 
-    public Pair(U first, V second) {
-        this.first = first;
-        this.second = second;
-    }
-    
-    public boolean isPrime() {
+        public Pair(U first, V second) {
+            this.first = first;
+            this.second = second;
+        }
+
+        public boolean isPrime() {
             if (first instanceof Integer && second instanceof Integer) {
                 int f = (Integer) first;
                 int s = (Integer) second;
@@ -33,13 +33,11 @@ public class J04020 {
             return false;
         }
 
-    @Override
-    public String toString() {
-        return first + " " + second;
+        @Override
+        public String toString() {
+            return first + " " + second;
+        }
     }
-    
-    
-}
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
